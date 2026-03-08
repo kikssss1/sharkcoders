@@ -20,18 +20,18 @@ def gooblins ():
     gooblins = [gooblinsHealth, gooblinsStrenght]
     return gooblins
 
-def strenght ():
-    dice = int (randint(1,20))
-    strenghtt = 0
-    if dice > 5:
-        strenghtt = 5
-    if dice <= 10:
-        strenghtt = 10
-    if dice >= 20:
-        strenghtt = 20
+def strength ():
+    _dice = int (randint(1, 20))
+    _strength = 0
+    if _dice > 5:
+        _strength = 5
+    if _dice <= 10:
+        _strength = 10
+    if _dice >= 20:
+        _strength = 20
 
-    strenghtt = [strenghtt]
-    return strenghtt
+    _strength = [_strength]
+    return _strength
 
 def health ():
     playerhealth = randint(15,25)
@@ -42,10 +42,10 @@ def health ():
 
 player = []
 player.append(health())
-player.append(strenght())
+player.append(strength())
 
 health = health()
-strenght = strenght()
+strenght = strength()
 gooblins = gooblins()
 dice = dice()
 
